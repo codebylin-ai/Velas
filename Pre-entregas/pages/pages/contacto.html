@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Aroma en Casa</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header class="encabezado">
+    <a class="logo" href="../index.html">
+        <img src="../Imagenes/logo.jpeg" alt="Logo de Aroma en Casa">
+    </a>
+
+    <h1 class="visualmente-oculto">Aroma en Casa</h1>
+
+    <nav aria-label="Navegación principal">
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="productos.html">Nuestros productos</a></li>
+            <li><a href="beneficios.html">Beneficios</a></li>
+            <li><a href="sobrenosotros.html">Sobre nosotros</a></li>
+            <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main>
+        <section aria-labelledby="titulo-contacto">
+            <h2 id="titulo-contacto">Contacto</h2>
+            <p>Escribinos para hacer una consulta o conocer más sobre nuestras velas artesanales.</p>
+
+            <form action="#" method="post">
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div>
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+
+                <div>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+
+                <button type="submit">Enviar consulta</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Nuestras redes: WhatsApp e Instagram.</p>
+        <p>&copy; 2026 Aroma en Casa. Creado por Pauli.</p>
+    </footer>
+</body>
+</html>
