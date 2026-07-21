@@ -1,104 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AromaenCasa</title>
-   
+    <title>Aroma en Casa</title>
     <link rel="stylesheet" href="styles/styles.css">
-
 </head>
 
 <body>
-    <header> 
-        <h1>Aroma en casa</h1>
-        <h2>Aromas que abrazan </h2>
-         <img src="../Pre-entregas/Imagenes/logo.jpeg" alt="">
-        <nav>
-            <a href="#">Inicio</a>
-            <a href="pages/productos.html">Nuestros productos</a>
-            <a href="pages/beneficios.html">Beneficios</a>
-            <a href="pages/sobrenosotros.html">Sobre nosotros</a>
-            <a href="pages/contacto.html">Contacto</a>
+    <header class="encabezado">
+        <a class="logo" href="index.html">
+           <img src="Imagenes/logo.jpeg" alt="Logo de Aroma en Casa">
+        </a>
+
+           <h1 class="visualmente-oculto">Aroma en Casa</h1>
+
+        <nav aria-label="Navegación principal">
+           <ul>
+             <li><a href="index.html" aria-current="page">Inicio</a></li>
+             <li><a href="pages/productos.html">Nuestros productos</a></li>
+             <li><a href="pages/beneficios.html">Beneficios</a></li>
+             <li><a href="pages/sobrenosotros.html">Sobre nosotros</a></li>
+             <li><a href="pages/contacto.html">Contacto</a></li>
+            </ul>
         </nav>
-
-
     </header>
-    
-        
+
     <main>
-        <section>
-            <h2>Nuestros aromas</h2>
+        <section class="productos-grid">
+            <h2 id="titulo-aromas">Nuestros aromas</h2>
 
-            <div>
-                <img src="../Pre-entregas/Imagenes/jazmingardenia.png" alt="">
-                <h3>Jazmin y Gardenia</h3>
-                <a href="pages/productos.html#jazmingardenia"></a>
-            </div>
-            
-            <div>
-                <img src="../Pre-entregas/Imagenes/kiwilima.png" alt="">
+            <article>
+                <img src="Imagenes/jazmingardenia.png" alt="Aroma Jazmín y Gardenia">
+                <h3>Jazmín y Gardenia</h3>
+                <a href="pages/productos.html#jazmingardenia">Ver más</a>
+            </article>
+
+            <article>
+                <img src="Imagenes/kiwilima.png" alt="Aroma Kiwi y Lima">
                 <h3>Kiwi y Lima</h3>
-                <a href="../Pre-entregas/pages/productos.html">Ver más</a>
-            </div>
+                <a href="pages/productos.html#kiwilima">Ver más</a>
+            </article>
 
-            
-            <div>
-                <img src="../Pre-entregas/Imagenes/lavanda.png" alt="">
+            <article>
+                <img src="Imagenes/lavanda.png" alt="Aroma Lavanda y Enebro">
                 <h3>Lavanda y Enebro</h3>
-                <a href="../Pre-entregas/pages/productos.html">Ver más</a>
-            </div>
+                <a href="pages/productos.html#lavandayenebro">Ver más</a>
+            </article>
 
-            <div>
-                <img src="../Pre-entregas/Imagenes/lilasandalo.png" alt="">
+            <article>
+                <img src="Imagenes/lilasandalo.png" alt="Aroma Lila y Sándalo">
                 <h3>Lila y Sándalo</h3>
-                <a href="../Pre-entregas/pages/productos.html">Ver más</a>
-            </div>
+                <a href="pages/productos.htmllilaysandalo">Ver más</a>
+            </article>
 
-            <div>
-                <img src="../Pre-entregas/Imagenes/lima.png" alt="">
-                <h3>Lima y Alphaca y Cítrico</h3>
-                <a href="../Pre-entregas/pages/productos.html#limacitrico">Ver más</a>
-            </div>
+            <article>
+                <img src="Imagenes/lima.png" alt="Aroma Lima, Albahaca y Cítrico">
+                <h3>Lima, Albahaca y Cítrico</h3>
+                <a href="pages/productos.html#limacitrico">Ver más</a>
+            </article>
 
-            <div>
-                <img src="../Pre-entregas/Imagenes/liriolotus.png" alt="">
+            <article>
+                <img src="Imagenes/liriolotus.png" alt="Aroma Lirio y Lotus">
                 <h3>Lirio y Lotus</h3>
-                <a href="../Pre-entregas/pages/productos.html">Ver más</a>
-            </div>
+                <a href="pages/productos.html#liriolotus">Ver más</a>
+            </article>
 
-            <div>
-                <img src="../Pre-entregas/Imagenes/narajamango.png" alt="">
+            <article>
+                <img src="Imagenes/narajamango.png" alt="Aroma Naranja, Mango y Pimienta">
                 <h3>Naranja, Mango y Pimienta</h3>
-                <a href="../Pre-entregas/pages/productos.html">Ver más</a>
-            </div>
+                <a href="pages/productos.html#naranjamango">Ver más</a>
+            </article>
 
-            <div>
-                <img src="../Pre-entregas/Imagenes/perafressia.png" alt="">
-                <h3>Pera y Fressia</h3>
-                <a href="../pages/productos.html#perafresia">Ver más</a>
-            </div>
-
+            <article>
+                <img src="Imagenes/perafressia.png" alt="Aroma Pera y Fresia">
+                <h3>Pera y Fresia</h3>
+                <a href="pages/productos.html#perafresia">Ver más</a>
+            </article>
         </section>
-        <section>
-            <h2>comentarios de nuestros cliente</h2>
-        </section>
-        
     </main>
 
-    
     <footer>
-       <div>
-           <p>Nuestras Redes</p>
-           <ul>
-              <li>Whatsapp</li>
-              <li>Instagram</li>
-           </ul>
-      </div>
+        <section aria-labelledby="redes">
 
-       <h3> creado por Pauli </h3>
+            <li>
+                <a href="https://wa.me/542645242174" target="_blank">
+                     WhatsApp
+                </a>
+            </li>   
+
+            <li>
+                <a href="https://www.instagram.com/_aromaencasa?igsh=bGc2ZWNsZWpwanVx" target="_blank">
+                    Instagram
+                </a>
+            </li>
+
+
+
+
+
+        </section>
+       
+        <p>Creado por Pauli</p>
     </footer>
-
-
 </body>
 </html>
